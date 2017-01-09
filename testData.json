@@ -1,0 +1,143 @@
+[
+	{
+        "start_time":"2016-12-13T00:00:00",  
+        "end_time":"2016-12-13T23:59:59",
+		"convertedUnitsId":"kilowatt-hours",
+        "altB2bUnitID":"0100070002",
+		"B2BUnitBroken": "456213",
+		"b2bUnitID":"0100052423",
+		"currentPage": "1",
+		"endDate": "03-12-2017",
+		"entryDate":"2017-09-29T00:00:00Z",
+		"entryNotes":"222",
+		"formProductCode": "10000002",
+		"pageSize": 20,
+		"productCode": "10000001",
+		"quantity": 1,
+		"returnB2bUnitID":"0100077214",
+		"startDate": "03-08-2016",
+		"title":"sss",
+		"userID":"automation",
+		"userIDBroken":"automayshun",
+		
+
+		"ALIProduct": "10000008",
+		"ALIQty": "5",
+		
+		"ASGPN": "0",
+		
+		"ASOriginal": "10001000",
+		"ASQuery": "50515",
+		
+		"BNProductNumber": "10000008",
+		"BNProductQty": "2",
+		
+		"BNWProductCode": "10000008",		
+		"BNWProductQty": "2",
+		
+		"CBBarcode": "65412387523",
+		"CBProductCode": "10000945",
+		
+		"CSSearchQuery": "advil",
+		"CSUnitID": "0100077214",
+		"CSUserID": "automation",
+		
+		"DAWNStatusDismiss": "dismissed",		
+		"DAWNStatusReset": "new",
+		
+		"DCBadCart":"300000",
+		
+		"DIFRComplainType": "PharmacyReturnOrder",
+		"DIFRProduct": "10000051",
+		"DIFRRtnQty": "5",
+		"DIFRSaleable": "false",
+		
+		"DLIBadCartID": "3000005121000",
+		"DLIBadEntryPK": "8796912386092",
+		"DLIProductCode": "10000008",		
+		"DLIProductQty": "5",
+		
+		"DRComplainType": "PharmacyReturnOrder",
+		"DRProduct": "10000051",
+		"DRRtnQty": "5",
+		"DRSaleable": "false",
+		
+		"ECBadInvNum": "12321232",
+		"ECProductCode": "10000051",
+		"ECQty":"5",
+		"ECSaleable": "false",
+		
+		"GCDCartIDBad":"3000002000111",
+		
+		"GCEFromDate": "2016-01-18T00:00:00Z",
+		"GCEFromDateBad": "2018-01-18T00:00:00Z",
+		"GCEToDate": "2017-10-19T00:00:00Z",
+		"GCEToDateBad": "2017-10-19T00:00:00Z",
+		
+		"GCHCartIDBad": "300004",
+		
+		"GEAViewType": "MONTHLY",
+		"GEAYearMonth": "2016-06",
+		
+		"GIFRBadInvoice": "dadada",
+		
+		"ILBadCode": "100000",
+		"ILProductCode": "10000051",
+		
+		"ILRInvalidDate": "resef",
+		"ILRInvoiceNumber": "0920001371",
+		
+		"IRBadCode": "100",
+		"IRExpirationDate": "09/21/2017",
+		"IRProductCode": "10000015",
+		"IRRtnQty": "1",
+		"IRSaleable": "true",
+		
+		"MCCartIDBad": "300",
+		"MCCartName": "test",
+		
+		"MLICartBad": "3000005111000",
+		"MLILineEntryBad": "300as0005111000asfas",
+		"MLIProdCode": "10000008",
+		"MLIProdModify": "10",
+		"MLIProdQty": "5",
+		
+		"PDProductCode": "10000008",
+		"PDProductWrong": "10000",
+		
+		"PIOFProduct": "10000430",
+		"PIOFProductWrong": "123456789",
+		"PIOFUnitIDWrong": "123456789",
+		
+		"PSIBadB2BUnitID": "010005242311ssss",
+		"PSIOtherB2BUnitID": "0100070334",
+		"PSIOtherScanCode": "010363",
+		"PSIScanCode": "068965",
+		"PSIScanCodeBad": "01011111111111",
+		
+		"RIFFProduct": "10000430",
+		"RIFFUnitIDWrong": "010005242",
+		
+		"SCCartIDBad": "30000050400000",
+		"SCProductCode": "10000008",
+		"SCProductQty": "5",
+		
+		"SRComplainCode": "9080036679",
+		"SRProduct": "10000051",
+		"SRReferenceNumber": "TestRef",
+		
+		"UESB2BUnitID": "0100077214",
+		"UESEntryPK": "8797207481889",
+		"UESNewStatus": "Complete",
+		
+		"UOREEntryPK": "8797207481889",
+		"UORESEntryPK": "8797174418977",
+		
+		"UPNTComment": "NoteText",
+		"UPNTProductCode": "10000051",
+		
+		"URInvoiceNumber": "0920001126",
+		"URReceiveAll": "false"
+
+	}	
+]

@@ -1,0 +1,177 @@
+{
+	"id": "d4443046-70c6-f02b-304c-c21b11e0a56b",
+	"name": "MEMS_Webservice_automation",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"id": "8ed49d51-0d7e-d43f-1455-108b2356491e",
+			"name": "Daily_hourly_consumption",
+			"description": "",
+			"order": [
+				"1d210901-3aa3-f43e-80c5-0f14ff496848",
+				"c81ef276-a69c-62e3-6f79-43d291b29176",
+				"67296386-e5eb-48a9-0a99-32ef7dfec4d5",
+				"274403b9-e0b2-658f-1788-47cded16754b"
+			],
+			"owner": "1092949",
+			"collectionId": "d4443046-70c6-f02b-304c-c21b11e0a56b"
+		}
+	],
+	"timestamp": 1482925677841,
+	"owner": "1092949",
+	"public": false,
+	"requests": [
+		{
+			"id": "1d210901-3aa3-f43e-80c5-0f14ff496848",
+			"headers": "Authorization: Basic cm9jbGllbnQ6c2VjcmV0\ngrant_type: password\nusername: bob\npassword: bob\nscope: read write\n",
+			"url": "{{ims}}/connect/token ",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "grant_type",
+					"value": "password",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "username",
+					"value": "bob",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "bob",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "scope",
+					"value": "read write",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "\nvar jsonData = JSON.parse(responseBody);\npostman.setGlobalVariable(\"access_token\", jsonData.access_token);\ntests[\"Token Access Succesfully\"]=1==1;\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1483340304014,
+			"name": "Get Access Token",
+			"description": "",
+			"collectionId": "d4443046-70c6-f02b-304c-c21b11e0a56b",
+			"responses": []
+		},
+		{
+			"id": "274403b9-e0b2-658f-1788-47cded16754b",
+			"headers": "Authorization: Bearer {{access_token}}\n",
+			"url": "{{timeseries_host}}/{{Point_ID}}.DeltaDaily/?startTime={{start_time}}&endTime={{end_time}}&convertedUnitsId={{convertedUnitsId}}",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "grant_type",
+					"value": "password",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "username",
+					"value": "bob",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "bob",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "scope",
+					"value": "read write",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "var jsonData = JSON.parse(responseBody);\n\n\nif(globals.hoursmetertotal==jsonData[0].val){\n    tests[\"Daily meter & hourly meter reading matches\"]=1==1;\n}else{\n tests[\"Daily meter & hourly meter reading not matches\"]=1==0;   \n}\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1483340376508,
+			"name": "DailyData",
+			"description": "",
+			"collectionId": "d4443046-70c6-f02b-304c-c21b11e0a56b",
+			"responses": []
+		},
+		{
+			"id": "67296386-e5eb-48a9-0a99-32ef7dfec4d5",
+			"headers": "Authorization: Bearer {{access_token}}\n",
+			"url": "{{timeseries_host}}/{{Point_ID}}.DeltaHourly/?startTime={{start_time}}&endTime={{end_time}}&convertedUnitsId={{convertedUnitsId}}",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "grant_type",
+					"value": "password",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "username",
+					"value": "bob",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "bob",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "scope",
+					"value": "read write",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "var jsonData = JSON.parse(responseBody);\nvar i , hoursmetertotal=0;\n\nfor (i=0;i<=jsonData.length-1;i++){\n    hoursmetertotal=hoursmetertotal+jsonData[i].val;\n}\n\ntests[\"addition is \"+hoursmetertotal]=1==1;\npostman.setGlobalVariable(\"hoursmetertotal\",hoursmetertotal);",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1483339962022,
+			"name": "Hourlydata",
+			"description": "",
+			"collectionId": "d4443046-70c6-f02b-304c-c21b11e0a56b",
+			"responses": []
+		},
+		{
+			"id": "c81ef276-a69c-62e3-6f79-43d291b29176",
+			"headers": "Authorization: Bearer {{access_token}}\n",
+			"url": "{{api}}/Systems?$expand=points",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": "var jsonData = JSON.parse(responseBody);\nvar i,point_id;\n\nfor(i = 0;i <jsonData.value[0].points.length; i++){\nif(jsonData.value[0].points[i].hasOwnProperty('nativeUomType')){\n  if(jsonData.value[0].points[i].nativeUomType==\"Energy\"){\n    point_id=jsonData.value[0].points[i].id;\n    jsonData.value[0].points[i].id;\n   tests[\"Pointd id : \" + point_id]=1==1;\n    postman.setGlobalVariable(\"Point_ID\",point_id);\n    break;\n  }\n }\n}\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1483339872723,
+			"name": "Get Point",
+			"description": "",
+			"collectionId": "d4443046-70c6-f02b-304c-c21b11e0a56b",
+			"responses": []
+		}
+	]
+}

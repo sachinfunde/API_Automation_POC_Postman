@@ -1,0 +1,69 @@
+{
+  "id": "10b581d2-ad44-266c-4b2d-0af423265099",
+  "name": "Postman Globals",
+  "values": [
+    {
+      "key": "echo_digest_realm",
+      "type": "text",
+      "value": "Users",
+      "enabled": true
+    },
+    {
+      "key": "echo_digest_nonce",
+      "type": "text",
+      "value": "WHjsLjKM4biHdZWivQo5QjYOmOBINtZP",
+      "enabled": true
+    },
+    {
+      "key": "receivedToken",
+      "type": "text",
+      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InE2Z25YVXZyX2FzZmNfS1VwUjVjNjhkVFpLcyIsImtpZCI6InE2Z25YVXZyX2FzZmNfS1VwUjVjNjhkVFpLcyJ9.eyJpc3MiOiJodHRwczovL3VhdC1tZW0yLmJ1aWxkaW5ncGxhdGZvcm0uY2xvdWQvSURNL2ltcyIsImF1ZCI6Imh0dHBzOi8vdWF0LW1lbTIuYnVpbGRpbmdwbGF0Zm9ybS5jbG91ZC9JRE0vaW1zL3Jlc291cmNlcyIsImV4cCI6MTQ4MjkzMTIxNSwibmJmIjoxNDgyOTI3NjE1LCJjbGllbnRfaWQiOiJyb2NsaWVudCIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJzdWIiOiJib2IiLCJhdXRoX3RpbWUiOjE0ODI5Mjc2MTUsImlkcCI6IkxvY2FsIiwib3JnIjoiamNpLmNvbSIsImFtciI6WyJTZWN1cml0eSBBUEkiXX0.uOrOOVgy4rD5OLBcX8mfqMbsrZZoYuE4k-tmoJvadejBou1aOxuopqZ3Sb9eZmC3_8CzRW84G-FSaQcNa_eQvM4FBlMTDFzUarjfTStNd2HFqMd9Zn_S3VlHA9oOK-vw_ESU9OGMokuRG-HflSxe75PR9f5F_pfknygHz3YpQe72hNmUpqGJygozQDoWqLs4u2S0B172nuiIKL09MoQVRFqRZgsNxnBoluVKwcz6M7SNyVNMt8QMcqOgDqcJW0fXjoU-1KxcCer8NRY7nOsuZKFEGeUoCBIQjyrdROO-wk5zfpEXO4tnH648JZlo7h7po6zGilCcEcgwC5hL-2HOlA",
+      "enabled": true
+    },
+    {
+      "key": "refreshtoken",
+      "type": "text",
+      "value": "d123b18d-249a-45ef-83fb-210ad8706c5e",
+      "enabled": true
+    },
+    {
+      "key": "tempCartCode",
+      "type": "text",
+      "value": "3000008516",
+      "enabled": true
+    },
+    {
+      "key": "tempCart",
+      "type": "text",
+      "value": "undefined",
+      "enabled": true
+    },
+    {
+      "key": "access_token",
+      "type": "text",
+      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ilo0a0FURlMzbWRDQTdaMk5NWjdGVkpEbE43NCIsImtpZCI6Ilo0a0FURlMzbWRDQTdaMk5NWjdGVkpEbE43NCJ9.eyJpc3MiOiJodHRwczovL3VhdC1tZW0yLmJ1aWxkaW5ncGxhdGZvcm0uY2xvdWQvSURNL2ltcyIsImF1ZCI6Imh0dHBzOi8vdWF0LW1lbTIuYnVpbGRpbmdwbGF0Zm9ybS5jbG91ZC9JRE0vaW1zL3Jlc291cmNlcyIsImV4cCI6MTQ4MzM0NTYzMywibmJmIjoxNDgzMzQyMDMzLCJjbGllbnRfaWQiOiJyb2NsaWVudCIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJzdWIiOiJib2IiLCJhdXRoX3RpbWUiOjE0ODMzNDIwMzMsImlkcCI6IkxvY2FsIiwib3JnIjoiamNpLmNvbSIsImFtciI6WyJTZWN1cml0eSBBUEkiXX0.BQed-FS24GRqN_f2q28I5cxll7oQfspLBd3XGzY1ha91VzzNYWWiw-RyXlWUe8MhJt1D6BQUh0nkcP45sKRJhv_mCXnQOdCgCo5N4ShbyvQUXzHLfF2sjpXxf83OLcdDnYsrXUPT4kPWpwfOBGJj9H2asPKsR3Hn9uwT9r6OW0z4MmebeEbDQWg87TMzCobnNLvKNepZrkXqFDYZFCtqKa-ZPx2l8C2nAqxvrFlgfnzYg2OF4a0aw6at2bAiRwsWaMly8N616vKun7ywkjPUemJKhdgZUEbcA7et5BNFzNmhBunxkhNOFSUIYjZPtVIiusxFxKmM-RpDHf-iOgakJw",
+      "enabled": true
+    },
+    {
+      "key": "Point_ID",
+      "type": "text",
+      "value": "083c8085-8d86-4d33-b54a-37d7e2285c33",
+      "enabled": true
+    },
+    {
+      "key": "variable_key",
+      "type": "text",
+      "value": "variable_value",
+      "enabled": true
+    },
+    {
+      "key": "hoursmetertotal",
+      "type": "text",
+      "value": "0.04954281099999997",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "globals",
+  "_postman_exported_at": "2017-01-02T07:32:41.410Z",
+  "_postman_exported_using": "Postman/4.9.2"
+}
